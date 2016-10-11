@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./styling.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="./app.js"></script>
+	<title>Getflix</title>
+</head>
+<body ng-app="app">
+
+<!-- HEADER/NAV BAR -->
+
+<div class="header">
+  <div class="container">
+    <ul class="nav">
+      <li>GETFLIX</li>
+      <li>
+    	  	
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN -->
+
+<div class="row">
+    <div ng-controller="getFlixCtrl" class="col-md-8">
+	  <form ng-submit="grabInput(input)">
+	  	  <input type="text" ng-model="input" placeholder="search"/>
+	  </form>
+	  <p>{{response}}</p>
+	  <img src="{{response}}"/>
+	</div>
+</div>
+
+<!-- BODY -->
+
+
+
+
+<!-- FOOTER -->
+
+
+</body>
+</html>
