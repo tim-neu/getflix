@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="./styling.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script src="./app.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./styling.css">
 	<title>Getflix</title>
 </head>
 <body ng-app="app">
@@ -14,32 +15,37 @@
 <div class="header">
   <div class="container">
     <ul class="nav">
-      <li>GETFLIX</li>
-      <li>
-    	  	
-      </li>
+      <li class="logotype">GETFLIX</li>
     </ul>
   </div>
 </div>
 
 <!-- MAIN -->
 
-<div class="row">
-    <div ng-controller="getFlixCtrl" class="col-md-8">
-	  <form ng-submit="grabInput(input)">
-	  	  <input type="text" ng-model="input" placeholder="search"/>
-	  </form>
-	  <p>{{response}}</p>
-	  <img src="{{response}}"/>
-	</div>
+<div class="main" ng-controller="getFlixCtrl">
+  <div id="wrapper">
+    <div class="search">
+    	<div class="poop">
+	       <form ng-submit="grabInput(input)">
+	         <input type="text" ng-model="input" placeholder="search"/>
+	       </form>
+    	</div>
+    </div>
+	<div class="content">
+      <div class="poster"><img src="{{response.poster}}"/></div>
+	    <div class="info">
+	      <div class="title">{{response.show_title}}</div>
+	      <div class="cast">{{response.show_cast}}</div>
+	      <div class="summary">{{response.summary}}</div>
+	      <ul class="addInfo">
+	      	<li>Genre: {{response.category}}</li>
+	      	<li>Rating: {{response.rating}}</li>
+	      	<li>Runtime: {{response.runtime}}</li>
+	      </ul>
+	    </div>
+	  </div>
+    </div>
 </div>
-
-<!-- BODY -->
-
-
-
-
-<!-- FOOTER -->
 
 
 </body>

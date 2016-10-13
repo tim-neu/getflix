@@ -1,5 +1,6 @@
 .body {
 	background-color: black;
+	margin: 0 auto;
 }
 
 .container {
@@ -8,8 +9,23 @@
 }
 
 .header {
-	height: 60px;
+	height: 62px;
 	box-shadow: 0px 2px 15px #e8e7e7;
+}
+
+form {
+	max-width: 665px;
+    margin: 0 auto;
+}
+
+li.logotype {
+	font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-kerning: 20px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #E50914;
 }
 
 ul.nav {
@@ -23,6 +39,92 @@ ul.nav {
 
 ul.nav li {
 	display: inline-block;
-
 }
 
+.main {
+	width: 70%; 
+	margin: 0 auto;
+    margin-top: 20px;
+}
+
+.search {
+	margin: 15px 0px; 
+}
+
+input {
+	margin: 15px 0px 20px 0px;
+	width: 100%;
+	border: none;
+    border-bottom: 1px solid #e8e7e7;
+    text-align: center;
+}
+
+input[type=text]:focus {
+    border-bottom: 1px solid #E50914;
+    outline: none;
+}
+
+
+
+img {
+	max-width:100%;
+    max-height:100%;
+    display: block;
+    margin:0 auto;
+}
+
+#wrapper {
+	width: 100vw;
+}
+
+.content {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.main {
+	width: 80%;
+	margin-right: auto;
+	margin-left: 0px;
+}
+
+.poster {
+	max-width: 665px;
+    margin: 0 auto;
+    background: #000;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+}
+
+.cast {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+	padding-top: 10px;
+	border-top: 0.5px solid #e8e7e7; 
+}
+
+.poop {
+	margin: 0 auto;
+}
+
+.info {
+	max-width: 665px;
+	margin: 0 auto;
+	padding:5%;
+}
+
+.summary {
+	font-size: 14px;
+	margin: 10px 0px 10px 0px;
+}
+
+.addInfo {
+	list-style: none;
+	display: inline;
+	font-size: 12px;
+}
