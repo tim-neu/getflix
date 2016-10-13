@@ -9,7 +9,8 @@ var app = express();
 
 app.use(bodyParser.json());
 app.use('/',express.static('./client'));
+app.set('port', process.env.PORT || 3000)
 
-app.listen(process.env.PORT, function(){
-  console.log('App is listening on port', port);
+app.listen(app.get('port'), function(){
+  console.log('App is listening on port', app.get('port'));
 });
